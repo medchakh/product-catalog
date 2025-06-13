@@ -69,7 +69,7 @@ const CatalogItem = ({
             variant="ghost"
             size="icon"
             onClick={() => onToggleFavorite(product.id)}
-            className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-background/80 z-10"
+            className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-background/80 z-10 cursor-pointer"
           >
             <Heart
               className={`h-4 w-4 transition-colors duration-200 ${
@@ -104,7 +104,7 @@ const CatalogItem = ({
       </CardContent>
 
       <CardFooter className="p-4 pt-[-1rem]">
-        <Button className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-200">
+        <Button className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-200 cursor-pointer">
           <ShoppingCart className="h-4 w-4 mr-2" />
           Add to Cart
         </Button>

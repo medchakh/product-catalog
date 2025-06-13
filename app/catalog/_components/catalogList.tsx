@@ -155,7 +155,7 @@ const CatalogList = ({ data }: CatalogListProps) => {
               size="sm"
               onClick={() => goToPage(currentPage - 1)}
               disabled={currentPage === 1}
-              className="transition-all duration-200"
+              className="transition-all duration-200 cursor-pointer"
             >
               <ChevronLeft className="h-4 w-4" />
               Previous
@@ -180,7 +180,7 @@ const CatalogList = ({ data }: CatalogListProps) => {
                     variant={currentPage === pageNum ? "default" : "outline"}
                     size="sm"
                     onClick={() => goToPage(pageNum)}
-                    className="w-10 transition-all duration-200"
+                    className="w-10 transition-all duration-200 cursor-pointer"
                   >
                     {pageNum}
                   </Button>
@@ -193,7 +193,7 @@ const CatalogList = ({ data }: CatalogListProps) => {
               size="sm"
               onClick={() => goToPage(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="transition-all duration-200"
+              className="transition-all duration-200 cursor-pointer"
             >
               Next
               <ChevronRight className="h-4 w-4" />

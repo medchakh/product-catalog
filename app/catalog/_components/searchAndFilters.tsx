@@ -119,7 +119,7 @@ const SearchAndFilters = ({
                   variant={sortBy === option ? "default" : "outline"}
                   size="sm"
                   onClick={() => onSort(option)}
-                  className="capitalize transition-all duration-200"
+                  className="capitalize transition-all duration-200 cursor-pointer"
                 >
                   {option}
                   <ArrowUpDown className="ml-1 h-3 w-3" />
@@ -151,7 +151,7 @@ const SearchAndFilters = ({
                 variant="ghost"
                 size="sm"
                 onClick={clearSearch}
-                className="ml-1 h-4 w-4 p-0"
+                className="ml-1 h-4 w-4 p-0 cursor-pointer"
               >
                 <X className="h-3 w-3" />
               </Button>
@@ -164,7 +164,7 @@ const SearchAndFilters = ({
                 variant="ghost"
                 size="sm"
                 onClick={clearCategory}
-                className="ml-1 h-4 w-4 p-0"
+                className="ml-1 h-4 w-4 p-0 cursor-pointer"
               >
                 <X className="h-3 w-3" />
               </Button>
@@ -177,7 +177,7 @@ const SearchAndFilters = ({
                 variant="ghost"
                 size="sm"
                 onClick={clearSort}
-                className="ml-1 h-4 w-4 p-0"
+                className="ml-1 h-4 w-4 p-0 cursor-pointer"
               >
                 <X className="h-3 w-3" />
               </Button>
