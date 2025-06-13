@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a mini take-home assignment built with [Next.js](https://nextjs.org) and Shadcn Ui bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
@@ -12,25 +12,53 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
+```
+
+to work with a build version:
+
+```bash
+# first initiate a build
+npm run build
+# run the build version
+npm run start
+
+```
+
+to run the tests:
+
+```bash
+npm run test
+# or
+npm run test
+
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+the code for catalog is at `app/catalog`
 
-## Learn More
+## Design Decisions
 
-To learn more about Next.js, take a look at the following resources:
+- The project uses Next.js App Router for modern routing and server components support.
+- UI components are styled with Shadcn UI and Tailwind CSS for rapid, consistent design.
+- The homepage features a clear call-to-action to check the catalog, prioritizing user navigation.
+- The codebase is organized for clarity and ease of extension, with catalog-related logic separated in `app/catalog`.
+- Accessibility and responsiveness are considered in layout and component choices.
+- Minimal dependencies are used to keep the project lightweight and easy to maintain.
+- Simple sorting and searching are implemented in the catalog to help users quickly find and organize products. The design is simple, as the main priority was functionality rather than aesthetics.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Potential Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Enhance the visual design and add more branding elements for a polished look.
+- improve the filtering, sorting and searching. Refactor the sorting and filtering state to use useQueryState from nuqs to allow url sharing. Use global state rather than local state.
+- Integrate product details pages for richer information.
+- Improve accessibility with more semantic HTML and ARIA attributes.
+- Add tests for catalog features and UI components.
+- Optimize performance for larger datasets.
+- Add an informative header navigation and footer.
+- Support for internationalization/localization.
+- Add user authentication and personalized features.
