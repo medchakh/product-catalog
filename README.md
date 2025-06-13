@@ -62,3 +62,4 @@ the code for catalog is at `app/catalog`
 - Add an informative header navigation and footer.
 - Support for internationalization/localization.
 - Add user authentication and personalized features.
+- Add CMS functionality to allow easy product modification
