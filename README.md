@@ -46,6 +46,7 @@ the code for catalog is at `app/catalog`
 - The project uses Next.js App Router for modern routing and server components support.
 - UI components are styled with Shadcn UI and Tailwind CSS for rapid, consistent design.
 - The homepage features a clear call-to-action to check the catalog, prioritizing user navigation.
+- The favorite products state is saved in local host, for fast and sustained storage.
 - The codebase is organized for clarity and ease of extension, with catalog-related logic separated in `app/catalog`.
 - Accessibility and responsiveness are considered in layout and component choices.
 - Minimal dependencies are used to keep the project lightweight and easy to maintain.
